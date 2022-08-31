@@ -40,9 +40,9 @@ def handle_message(event):
     msg_in = event.message.text
     msg_reply = '尚未建立資料'
 
-    if msg_in == '順宏':
+    if '順宏' in msg_in:
         msg_reply = '順宏交通有限公司,聯絡人:雪碧,電話:(02)2608-9268,地址:南勢倉_新北市林口區南勢村10鄰31之21號,太平倉_新北市林口區太平里6鄰10-10號'
-    elif msg_in == '瀚文':
+    elif '瀚文' in msg_in:
         msg_reply = '瀚文紙(企)業股份有限公司,聯絡人:陳伊柔,電話:(02)2759-6116,地址:台北市信義區松德路171號20樓'
 
     line_bot_api.reply_message(
